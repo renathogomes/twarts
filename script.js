@@ -1,18 +1,17 @@
 const form = document.querySelector('form');
-const email = document.querySelector('#input-email');
+const email = document.querySelector('#input-email-header');
 const senha = document.querySelector('#input-senha');
 
-window.onload = () => {
-  form.addEventListener('submit', (evento) => {
-    evento.preventDefault();
+form.addEventListener('submit', (evento) => {
+  evento.preventDefault();
 
-    if (email.value === 'tryber@teste.com' && senha.value === '123456') {
-      alert('Olá Tryber!');
-    } else {
-      alert('Email ou senha inválidos');
-    }
-  });
-};
+  if (email.value === 'tryber@teste.com' && senha.value === '123456') {
+    window.alert('Olá, Tryber!');
+  }
+  if (email.valeu !== 'tryber@teste.com' && senha.value !== '123456') {
+    window.alert('Email ou senha inválidos.');
+  }
+});
 
 const verificaCheck = () => {
   const checkbox = document.getElementById('agreement');
