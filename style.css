@@ -15,6 +15,7 @@
   display: flex;
 }
 
+<<<<<<< HEAD
 .evaluation-form {
   display: flex;
   flex-direction: column;
@@ -23,3 +24,13 @@
 #trybewarts-forms-logo {
   height: 500px;
 }
+=======
+.main-container {
+  display: flex;
+}
+
+#evaluation-form {
+  display: flex;
+  width: 675px;
+}
+>>>>>>> c443890d9dd37d2f97d3963474ad4952dd2bfb6f
