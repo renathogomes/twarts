@@ -13,3 +13,12 @@ window.onload = () => {
     }
   });
 };
+
+/* const verificaCheck = () => {
+  const checkbox = document.getElementById('#agreement');
+  if (checkbox.parentNode) {
+    checkbox.parentNode.removeChild(document.getElementById('#submit-btn'));
+  }
+};
+
+verificaCheck(); */
