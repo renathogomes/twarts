@@ -36,6 +36,12 @@ section {
   display: flex;
 }
 
-.alinha {
+
+.nomeSobrenome {
+  display: flex;
+  flex-direction: row;
+}
+
+.emailSelect {
   display: flex;
 }
