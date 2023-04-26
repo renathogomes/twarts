@@ -14,11 +14,16 @@ window.onload = () => {
   });
 };
 
-/* const verificaCheck = () => {
-  const checkbox = document.getElementById('#agreement');
-  if (checkbox.parentNode) {
-    checkbox.parentNode.removeChild(document.getElementById('#submit-btn'));
-  }
+const verificaCheck = () => {
+  const checkbox = document.getElementById('agreement');
+  const botao = document.getElementById('submit-btn');
+  checkbox.addEventListener('click', () => {
+    if (checkbox.checked) {
+      botao.disable = false;
+    } else {
+      botao.disable = true;
+    }
+  });
 };
 
-verificaCheck(); */
+verificaCheck();
