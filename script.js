@@ -5,11 +5,19 @@ const senha = document.querySelector('#input-senha');
 form.addEventListener('submit', (evento) => {
   evento.preventDefault();
 
-  if (email.value && senha.value) {
-    if (email.value === 'tryber@teste.com' && senha.value === '123456') {
-      window.alert('Olá, Tryber!');
-    } else {
-      window.alert('Email ou senha inválidos.');
-    }
+  if (email.value === 'tryber@teste.com' && senha.value === '123456') {
+    window.alert('Olá, Tryber!');
+  }
+  if (email.valeu !== 'tryber@teste.com' && senha.value !== '123456') {
+    window.alert('Email ou senha inválidos.');
   }
 });
+
+/* const verificaCheck = () => {
+  const checkbox = document.getElementById('#agreement');
+  if (checkbox.parentNode) {
+    checkbox.parentNode.removeChild(document.getElementById('#submit-btn'));
+  }
+};
+
+verificaCheck(); */
