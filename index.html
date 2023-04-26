@@ -32,7 +32,7 @@
         <main class="main-container">
 
             <form action="" method="get" id="evaluation-form">
-                <div id="nomeEmail">
+                <div class="nomeSobrenome">
                     <div>
                         <input type="text" name="nome" id="input-name" placeholder="Nome">
                     </div>
@@ -41,16 +41,18 @@
                     </div>
                 </div>
 
-                <div>
-                    <input type="email" name="email" id="input-email" placeholder="Email">
-                </div>
-
-                <select name="selected" id="house">
-                    <option value="Gitnória" id="gitnoria-house">Gitnória</option>
-                    <option value="Reactpuff" id="reactpuff-house">Reactpuff</option>
-                    <option value="Corvinode" id="corvinode-house">Corvinode</option>
-                    <option value="Pytherina" id="pytherina-house">Pytherina</option>
-                </select>
+                <div class="emailSelect">
+                  <div>
+                      <input type="email" name="email" id="input-email" placeholder="Email">
+                  </div>
+                  <label for="house"> Casa: </label>
+                  <select name="selected" id="house">
+                      <option value="Gitnória" id="gitnoria-house">Gitnória</option>
+                      <option value="Reactpuff" id="reactpuff-house">Reactpuff</option>
+                      <option value="Corvinode" id="corvinode-house">Corvinode</option>
+                      <option value="Pytherina" id="pytherina-house">Pytherina</option>
+                  </select>
+              </div>
 
             </form>
         </main>
@@ -59,5 +61,4 @@
         </aside>
     </section>
 </body>
-
 </html>

@@ -35,3 +35,12 @@
 section {
   display: flex;
 }
+
+.nomeSobrenome {
+  display: flex;
+  flex-direction: row;
+}
+
+.emailSelect {
+  display: flex;
+}
