@@ -13,16 +13,16 @@ form.addEventListener('submit', (evento) => {
   }
 });
 
-const verificaCheck = () => {
-  const checkbox = document.getElementById('agreement');
-  const botao = document.getElementById('submit-btn');
-  checkbox.addEventListener('click', () => {
-    if (checkbox.checked) {
-      botao.disable = false;
-    } else {
-      botao.disable = true;
-    }
-  });
-};
+const botao = document.getElementById('submit-btn');
+botao.addEventListener('click', (e) => {
+  e.preventDefault();
+});
 
-verificaCheck();
+const checkbox = document.getElementById('agreement');
+checkbox.addEventListener('click', () => {
+  if (checkbox.value === 'on') {
+    botao.disabled = false;
+  } else {
+    botao.disabled = true;
+  }
+});
